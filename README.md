@@ -5,7 +5,7 @@ Developed by: Jacó Julio.
 
 ## Project description
 
-This project aims to analyze 3 datasets from the UCI Dataset repository. It has to be a classification, one about regression and one about clustering  analysis. You should talk about the evaluation metrics and show the best results.
+This project aims to analyze 3 datasets from the UCI Dataset repository. It has to be a classification, one about regression and one about clustering  analysis. You should talk about the evaluation metrics and show the best results. The preprocessing file indicates the preprocessing done in the dataset and the models file indicates the built models for the dataset. Only clustering has only the models file.
 
 ## Chosen dataset details
 
@@ -105,6 +105,20 @@ Exploratory analysis and creation of the best Clustering model will be described
 5. The Kmeans algorithm was clustered for the following cluster sequences, from 2 to 7. Each sequence was evaluated with the silhouette_score algorithm.
 6. It was clustered with the AffinityPropagation algorithm and evaluated with the silhouette_score algorithm.
 7. The AgglomerativeClustering algorithm was clustered for the following cluster sequences, from 2 to 7. Each sequence was evaluated with the silhouette_score algorithm.
+
+## Results Analysis
+
+### Classification
+
+The rating models had a good result and the best one was the XGBoosting. The ROC and Confusion Matrix metrics indicated an optimal result for XGBoodting, especially the Confusion Matrix indicated more false positives than false negatives. This is good considering that the dataset is about cancer incidence analysis. False positives would result in more tests to indicate the best treatment and subsequent tests could result in cancer negative. Already, false negatives would end up releasing the patient, and this really having the disease.
+
+### Regression
+
+The best result for the regression model was with Decision Tree algorithm. This algorithm obtained the best result in the 3 training and test sets (one normalized data set, one standardized data set and one original data set) for the mean absolute error, mean squared error and R2 metrics. Interestingly the best result was in the original dataset, as the dataset is regression, it was expected that the best result would be in the normalized dataset.
+
+### Clustering
+
+The clustering was done with 3 algorithms (K Means, Affinity Propagation and AgglomerativeClustering) and evaluated with the silhouette score, a metric that measures how similar the object is to its cluster. As is well known, the dataset has 3 labels, but in clustering two algorithms (Kmeans and AgglomerativeClustering) indicated that the dataset would be better divided into 2 labels according to the characteristics of the objects. Only one algorithm (AffinityPropagation) indicated that the dataset is best divided into 3 labels.
 
 
 

@@ -79,7 +79,32 @@ Exploratory analysis and creation of the best classification model will be descr
 1. The class was plotted and the imbalance noticed.
 2. A balance was made with the SMOTE algorithm.
 3. The dataset was divided into training set and test set with the train_test_split algorithm.
-4. The best parameters were searched with the GridSearchCV algorithm. This search was done using Logistic Regression, KNN, SVM, Bagging Classifier, Random Forest and XGBoosting algorithms.
+4. The best parameters were searched with the GridSearchCV algorithm. 
+5. This search was done using Logistic Regression, KNN, SVM, Bagging Classifier, Random Forest and XGBoosting algorithms.
+6. The best classification algorithms were chosen, such as Logistic Regression, Bagging Classifier, Random Forest and XGBoosting. Key assessment metrics were plotted.
+
+### Regression
+
+Exploratory analysis and creation of the best Regression model will be described step by step.
+
+1. The data were plotted and outliers were observed.
+2. The outliers were excluded from an upper and lower limit.
+3. The data were normalized and standardized.
+4. The dataset was divided into training set and test set with the train_test_split algorithm.
+5. The regression was performed using the Linear Regression, Ridge Regression, Lasso Regression, ElasticNet Regression, KNN, Decision Tree, and SVM algorithms.
+6. The mean absolute error, mean squared error and r2 metrics were chosen to evaluate the best model.
+
+### Clustering
+
+Exploratory analysis and creation of the best Clustering model will be described step by step.
+
+1. The dataset chosen is classification and clustering at the same time, because it has the class yet.
+2. By having the class, data was visualized to see its behavior. It turned out that the dataset was balanced.
+3. The class column was removed.
+4. The data were normalized.
+5. The Kmeans algorithm was clustered for the following cluster sequences, from 2 to 7. Each sequence was evaluated with the silhouette_score algorithm.
+6. It was clustered with the AffinityPropagation algorithm and evaluated with the silhouette_score algorithm.
+7. The AgglomerativeClustering algorithm was clustered for the following cluster sequences, from 2 to 7. Each sequence was evaluated with the silhouette_score algorithm.
 
 
 

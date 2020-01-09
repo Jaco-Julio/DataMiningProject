@@ -60,7 +60,7 @@ Detail about dataset:
 * Number of Attributes: 7
 * Missing Values: No
 * Attribute Characteristics: Real
-* Attribute Details:
+* Attribute Details. All of these parameters were real-valued continuous:
   1. area A,
   2. perimeter P,
   3. compactness C = 4*pi*A/P^2,
@@ -68,7 +68,19 @@ Detail about dataset:
   5. width of kernel,
   6. asymmetry coefficient
   7. length of kernel groove.
-All of these parameters were real-valued continuous.
+
+
+## Exploratory analysis
+
+### Classification
+
+Exploratory analysis and creation of the best classification model will be described step by step.
+
+1. The class was plotted and the imbalance noticed.
+2. A balance was made with the SMOTE algorithm.
+3. The dataset was divided into training set and test set with the train_test_split algorithm.
+4. The best parameters were searched with the GridSearchCV algorithm. This search was done using Logistic Regression, KNN, SVM, Bagging Classifier, Random Forest and XGBoosting algorithms.
+
 
 
 

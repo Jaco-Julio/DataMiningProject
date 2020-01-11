@@ -77,6 +77,7 @@ Detail about dataset:
 Exploratory analysis and creation of the best classification model will be described step by step.
 
 1. The class was plotted and the imbalance noticed.
+![Imbalance Class](https://github.com/Jaco-Julio/DataMiningProject/blob/master/Classification/imbalance_class.png "Imbalance Class")
 2. A balance was made with the SMOTE algorithm.
 3. The dataset was divided into training set and test set with the train_test_split algorithm.
 4. The best parameters were searched with the GridSearchCV algorithm. 
@@ -104,6 +105,7 @@ Exploratory analysis and creation of the best Clustering model will be described
 
 1. The dataset chosen is classification and clustering at the same time, because it has the class yet.
 2. By having the class, data was visualized to see its behavior. It turned out that the dataset was balanced.
+![Class Distribution](https://github.com/Jaco-Julio/DataMiningProject/blob/master/Clustering/distribution.png "Class Distribution")
 3. The class column was removed.
 4. The data were normalized.
 5. The Kmeans algorithm was clustered for the following cluster sequences, from 2 to 7. Each sequence was evaluated with the silhouette_score algorithm.

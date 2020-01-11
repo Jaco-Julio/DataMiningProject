@@ -88,7 +88,11 @@ Exploratory analysis and creation of the best classification model will be descr
 Exploratory analysis and creation of the best Regression model will be described step by step.
 
 1. The data were plotted and outliers were observed.
+![Class Distribution](https://github.com/Jaco-Julio/DataMiningProject/blob/master/Regression/distribution.png "Class Distribution")
+![Class Boxplot](https://github.com/Jaco-Julio/DataMiningProject/blob/master/Regression/boxplot.png "Class Boxplot")
 2. The outliers were excluded from an upper and lower limit.
+![Class Distribution Without Outlier](https://github.com/Jaco-Julio/DataMiningProject/blob/master/Regression/distribution1.png "Class Distribution Without Outlier")
+![Class Boxplot Without Outlier](https://github.com/Jaco-Julio/DataMiningProject/blob/master/Regression/boxplot1.png "Class Boxplot Without Outlier")
 3. The data were normalized and standardized.
 4. The dataset was divided into training set and test set with the train_test_split algorithm.
 5. The regression was performed using the Linear Regression, Ridge Regression, Lasso Regression, ElasticNet Regression, KNN, Decision Tree, and SVM algorithms.

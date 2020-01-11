@@ -77,7 +77,9 @@ Detail about dataset:
 Exploratory analysis and creation of the best classification model will be described step by step.
 
 1. The class was plotted and the imbalance noticed.
+
 ![Imbalance Class](https://github.com/Jaco-Julio/DataMiningProject/blob/master/Classification/imbalance_class.png "Imbalance Class")
+
 2. A balance was made with the SMOTE algorithm.
 3. The dataset was divided into training set and test set with the train_test_split algorithm.
 4. The best parameters were searched with the GridSearchCV algorithm. 
@@ -117,6 +119,44 @@ Exploratory analysis and creation of the best Clustering model will be described
 ### Classification
 
 The rating models had a good result and the best one was the XGBoosting. The ROC and Confusion Matrix metrics indicated an optimal result for XGBoodting, especially the Confusion Matrix indicated more false positives than false negatives. This is good considering that the dataset is about cancer incidence analysis. False positives would result in more tests to indicate the best treatment and subsequent tests could result in cancer negative. Already, false negatives would end up releasing the patient, and this really having the disease.
+
+| Algorithm | ROC |
+| :-------------: | :--------: |
+| Logistic Regression | 95,90% |
+| Bagging Classifier | 96,00% |
+| Random Forest | 97,11% |
+| Gradient Boosting | 97,53% |
+
+Confusion Matrix of Logistic Regression:
+
+| ----------- | No Cancer | Cancer |
+| :----------: | :---------: | :--------: |
+| **No Cancer** | 141 | 3 |
+| **Cancer** | 8 | 123 |
+
+Confusion Matrix of Bagging Classifier:
+
+| ----------- | No Cancer | Cancer |
+| :----------: | :---------: | :--------: |
+| **No Cancer** | 138 | 6 |
+| **Cancer** | 5 | 126 |
+
+Confusion Matrix of Random Forest: 
+
+| ----------- | No Cancer | Cancer |
+| :----------: | :---------: | :--------: |
+| **No Cancer** | 139 | 5 |
+| **Cancer** | 3 | 128 |
+
+Confusion Matrix of Gradient Boosting:
+
+| ----------- | No Cancer | Cancer |
+| :----------: | :---------: | :--------: |
+| **No Cancer** | 138 | 6 |
+| **Cancer** | 1 | 130 |
+
+
+
 
 ### Regression
 

@@ -129,31 +129,31 @@ The rating models had a good result and the best one was the XGBoosting. The ROC
 
 Confusion Matrix of Logistic Regression:
 
-| ----------- | No Cancer | Cancer |
+| ----------- | Benign Cancer | Malignant Cancer |
 | :----------: | :---------: | :--------: |
-| **No Cancer** | 141 | 3 |
-| **Cancer** | 8 | 123 |
+| **Benign Cancer** | 141 | 3 |
+| **Malignant Cancer** | 8 | 123 |
 
 Confusion Matrix of Bagging Classifier:
 
-| ----------- | No Cancer | Cancer |
+| ----------- | Benign Cancer | Malignant Cancer |
 | :----------: | :---------: | :--------: |
-| **No Cancer** | 138 | 6 |
-| **Cancer** | 5 | 126 |
+| **Benign Cancer** | 138 | 6 |
+| **Malignant Cancer** | 5 | 126 |
 
 Confusion Matrix of Random Forest: 
 
-| ----------- | No Cancer | Cancer |
+| ----------- | Benign Cancer | Malignant Cancer |
 | :----------: | :---------: | :--------: |
-| **No Cancer** | 139 | 5 |
-| **Cancer** | 3 | 128 |
+| **Benign Cancer** | 139 | 5 |
+| **Malignant Cancer** | 3 | 128 |
 
 Confusion Matrix of Gradient Boosting:
 
-| ----------- | No Cancer | Cancer |
+| ----------- | Benign Cancer | Malignant Cancer |
 | :----------: | :---------: | :--------: |
-| **No Cancer** | 138 | 6 |
-| **Cancer** | 1 | 130 |
+| **Benign Cancer** | 138 | 6 |
+| **Malignant Cancer** | 1 | 130 |
 
 
 

@@ -202,7 +202,11 @@ The best result for the regression model was with Decision Tree algorithm. This 
 
 The clustering was done with 3 algorithms (K Means, Affinity Propagation and AgglomerativeClustering) and evaluated with the silhouette score, a metric that measures how similar the object is to its cluster. As is well known, the dataset has 3 labels, but in clustering two algorithms (Kmeans and AgglomerativeClustering) indicated that the dataset would be better divided into 2 labels according to the characteristics of the objects. Only one algorithm (AffinityPropagation) indicated that the dataset is best divided into 3 labels.
 
-
+| Algorithm | Clusters | Silhouette Score |
+| :-------: | :------: | :--------------: |
+| Kmeans | 2 | 0,5051 |
+| Affinity Propagation | 3 | 0,620 |
+| Agglomerative Clustering | 2 | 0,4934 |
 
 
 

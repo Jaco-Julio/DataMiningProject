@@ -162,6 +162,42 @@ Confusion Matrix of Gradient Boosting:
 
 The best result for the regression model was with Decision Tree algorithm. This algorithm obtained the best result in the 3 training and test sets (one normalized data set, one standardized data set and one original data set) for the mean absolute error, mean squared error and R2 metrics. Interestingly the best result was in the original dataset, as the dataset is regression, it was expected that the best result would be in the normalized dataset.
 
+#### Original Dataset
+
+| Algorithm | MAE | MSE | R2 | 
+| :-------------: | :--------: | :-------: | :-------: |
+| Linear Regression | -7,57 | -89,13 | 0,44 |
+| Ridge Regression | -7,57 | -89,13 | 0,44 |
+| Lasso Regression | -7,58 | -89,20 | 0,44 |
+| ElasticNet Regression | -7,57 | -89,17 | 0,44 |
+| KNN Regression | -6,55 | -69,97 | 0,56 |
+| Decision Tree Regression | -4,40 | -41,13 | 0,74 |
+| Suport Vector Regression | -10,28 | -159,57 | 0,015 |
+
+#### Normalized Dataset
+
+| Algorithm | MAE | MSE | R2 | 
+| :-------------: | :--------: | :-------: | :-------: |
+| Linear Regression | -0,1443 | -0,0323 | 0,44 |
+| Ridge Regression | -0,1456 | -0,0323 | 0,44 |
+| Lasso Regression | -0,2005 | -0,0592 | 0,0066 |
+| ElasticNet Regression | -0,2005 | -0,0592 | 0,0066 |
+| KNN Regression | -0,1231 | -0,0254 | 0,56 |
+| Decision Tree Regression | -0,0846 | -0,0154 | 0,73 |
+| Suport Vector Regression | -0,1265 | -0,0249 | 0,57 |
+
+#### Standardized Dataset
+
+| Algorithm | MAE | MSE | R2 | 
+| :-------------: | :--------: | :-------: | :-------: |
+| Linear Regression | -0,5869 | -0,5355 | 0,44 |
+| Ridge Regression | -0,5873 | -0,05355 | 0,44 |
+| Lasso Regression | -0,8154 | -0,9798 | 0,0066 |
+| ElasticNet Regression | -0,8154 | -0,9798 | 0,0066 |
+| KNN Regression | -0,4937 | -0,4026 | 0,58 |
+| Decision Tree Regression | -0,3426 | -0,2588 | 0,73 |
+| Suport Vector Regression | -0,3797 | -0,2615 | 0,72 |
+
 ### Clustering
 
 The clustering was done with 3 algorithms (K Means, Affinity Propagation and AgglomerativeClustering) and evaluated with the silhouette score, a metric that measures how similar the object is to its cluster. As is well known, the dataset has 3 labels, but in clustering two algorithms (Kmeans and AgglomerativeClustering) indicated that the dataset would be better divided into 2 labels according to the characteristics of the objects. Only one algorithm (AffinityPropagation) indicated that the dataset is best divided into 3 labels.
